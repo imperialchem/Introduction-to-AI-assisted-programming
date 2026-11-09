@@ -1,0 +1,42 @@
+{
+  "name": "custom_hx3_qwen",
+  "engine": "openai",
+  "display_name": "HX3 Qwen",
+  "description": "Qwen3-0.6B model running on the HX3 cluster.",
+  "api_key_env": "",
+  "base_url": "https://qwen-chem-tok-runai-chemistry-tests.runai-inference.hx3.hpc.ic.ac.uk",
+  "models": [
+    {
+      "name": "Qwen/Qwen3-0.6B",
+      "context_limit": null,
+      "input_token_cost": null,
+      "output_token_cost": null,
+      "currency": null,
+      "supports_cache_control": null,
+      "reasoning": false
+    }
+  ],
+  "headers": null,
+  "session_id_header_override": null,
+  "timeout_seconds": null,
+  "supports_streaming": true,
+  "requires_auth": true,
+  "catalog_provider_id": null,
+  "base_path": "v1/chat/completions",
+  "env_vars": null,
+  "auth": {
+    "command": "python",
+    "args": ["%APPDATA%\\Block\\goose\\config\\HX3_tokens.py"],
+    "refresh_interval": 3600,
+    "timeout_seconds": null,
+    "cwd": null
+  },
+  "dynamic_models": null,
+  "skip_canonical_filtering": false,
+  "model_doc_link": null,
+  "setup_steps": [],
+  "toolshim": false,
+  "preserves_thinking": true,
+  "emit_clear_thinking": false,
+  "setup": null
+}
